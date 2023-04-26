@@ -1,7 +1,7 @@
 import React from 'react'
 import Swal from 'sweetalert2'
 
-const NewItemButton = (ListItems, setListItems ) => {
+const NewItemButton = ({listItems , setListItems}) => {
     const newItemModal = async () => {
         const {value} = await Swal.fire({
             title: "New Item Information",
@@ -26,11 +26,12 @@ const NewItemButton = (ListItems, setListItems ) => {
         setListItems ([
             ...listItems,
             {
-                id: listItems.length() + 1,
+                id: listItems.length + 1,
                 ...value,
-                checked: false
+                checked: false,
             }
         ])
+
     }
     return (
         <button

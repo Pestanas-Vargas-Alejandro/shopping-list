@@ -58,8 +58,8 @@ function App() {
         </div>
         <div className="col text-end mt-1">
           <NewItemButton
-          listItems = {listItems} 
-          setListItems = {setListItems}
+            listItems={listItems}
+            setListItems={setListItems}
           />
         </div>
         <hr />
@@ -81,10 +81,9 @@ function App() {
       <hr />
       <div className="row mt-4">
         <div className="col text-end">
-        <NewItemButton
-          listItems = {listItems} 
-          setListItems = {setListItems}
-          />
+          <NewItemButton
+            listItems={listItems}
+            setListItems={setListItems} />
         </div>
       </div>
     </div>
