@@ -13,6 +13,7 @@ const clearList = async () => {
       })
 
       if (isConfirmed) {
+        localStorage.setItem("listItems", JSON.stringify([]));
         setListItems ([])
       }
 }
